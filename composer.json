@@ -1,0 +1,42 @@
+{
+  "name": "aimagician/bitpaymagic",
+  "description": "A Laravel 5 wrapper package for an amazing BitPay payment system",
+  "keywords": [
+    "library",
+    "bitpay",
+    "bitcoin"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ivan Popov",
+      "email": "ivan.popov@live.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^5.5.9 || ^7.0",
+    "bitpay/php-client": "~2.2"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.0",
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aimagician\\Bitpaymagic\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Aimagician\\Bitpaymagic\\BitpaymagicServiceProvider"
+      ],
+      "aliases": {
+        "Bitpaymagic": "Aimagician\\Bitpaymagic\\BitpaymagicFacade"
+      }
+    }
+  }
+}
+
