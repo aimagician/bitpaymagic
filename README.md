@@ -1,5 +1,5 @@
 # bitpaymagic
-Simple Laravel 5 wrapper for [Bitpay](https://github.com/bitpay/php-bitpay-client/)
+Simple Laravel 5 wrapper for the [Bitpay php client](https://github.com/bitpay/php-bitpay-client/)
 
 ## Installation
 Add this package to your project, with [Composer](https://getcomposer.org/)
@@ -16,7 +16,7 @@ Run the following command to have Laravel set up a configuration file for you.
 php artisan vendor:publish
 ```
 
-This will create in config/bitpaymagic.php a config file. Config file uses a .env variables.
+This will create in config folder a "bitpaymagic.php" config file. Config file uses a .env variables.
 Update .env file with these keys.
 
 ```bash
@@ -37,4 +37,6 @@ run this artisan command, and update generated token value in .env file(BITPAY_G
 php artisan bitpaymagic:setup
 ```
 
-This step is needed to run just once, if error is being shown, please revoke and update pairing code, and try again.
+This step is needed to run just once, if error is being shown, please revoke and update pairing code, and try again, 
+or follow this tutorial and do everything manually. 
+
