@@ -24,7 +24,7 @@ BITPAY_STORAGE_PASS=YourTopSecretPassword
 BITPAY_PAIRING_CODE=YourPairingCode
 BITPAY_PAIRING_CODE_LABEL="Test Token Label - optional"
 BITPAY_ENV=testnet
-BITPAY_GENERATED_TOKEN="Here generated token will go"
+BITPAY_GENERATED_TOKEN="Put here generated token"
 ```
 
 Pairing code can be setup here in: Payment Tools -> Manage API tokens -> Add new token -> Add token
