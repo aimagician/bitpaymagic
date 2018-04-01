@@ -38,5 +38,5 @@ php artisan bitpaymagic:setup
 ```
 
 This step is needed to run just once, if error is being shown, please revoke and update pairing code, and try again, 
-or follow this tutorial and do everything manually. 
+or follow this [tutorial](https://github.com/bitpay/php-bitpay-client/tree/master/examples/tutorial) and do everything manually. 
 
