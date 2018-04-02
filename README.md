@@ -39,8 +39,27 @@ php artisan bitpaymagic:setup
 
 This step is needed to run just once, if error is being shown, please revoke and update pairing code, and try again, 
 or follow this [tutorial](https://github.com/bitpay/php-bitpay-client/tree/master/examples/tutorial) and do everything manually.
+
+## Trait
+A Bitpaymagic Trait `initBitpaymagicClient()` function will return a client
+```
+use BitpaymagicTrait;
+...
+...
+$client = $this->initBitpaymagicClient();
+```
+
+## Facades
+Simply use Laravel facades:
+```
+use Bitpay\Buyer;
+use Bitpay\Currency;
+use Bitpay\Invoice;
+use Bitpay\Item;
+```
  
 Bitpay [documentation](https://bitpay.com/docs/) 
 
 How to setup [test environment](https://bitpay.com/docs/testing)
 
+A full working example: [https://github.com/aimagician/bitpay-test](https://github.com/aimagician/bitpay-test) 
